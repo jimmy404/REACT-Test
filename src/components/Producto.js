@@ -6,7 +6,7 @@ const Producto = ({producto, carrito, agregarProducto, productos}) => {
 
     //Agrgar producto
     const selecionarProducto = id => {
-        const producto = productos.filter(producto => producto.id === id);
+        const producto = productos.filter(producto => producto.id === id)[0];
         agregarProducto([
             ...carrito,
             producto

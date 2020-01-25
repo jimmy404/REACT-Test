@@ -7,12 +7,16 @@ const Carrito = ({carrito}) => (
 
     <div className="carrito">
         <h2>Tu carrito de compras</h2>
-        {carrito.map(producto => (
+
+
+        {carrito.length === 0
+        ? <p>No hay elementos en el carrito</p>
+        : carrito.map(producto => (
             <Producto
-            key={producto.id}
-            producto={producto}
+                key={producto.id}
+                producto={producto}
             />
-        ))}
+        )) }
     </div>
 )
 
