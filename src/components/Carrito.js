@@ -3,7 +3,7 @@ import './Carrito.css';
 import Producto from './Producto';
 
 
-const Carrito = ({carrito}) => (
+const Carrito = ({carrito, agregarProducto}) => (
 
     <div className="carrito">
         <h2>Tu carrito de compras</h2>
@@ -15,6 +15,8 @@ const Carrito = ({carrito}) => (
             <Producto
                 key={producto.id}
                 producto={producto}
+                carrito={carrito}
+                agregarProducto={agregarProducto}
             />
         )) }
     </div>
