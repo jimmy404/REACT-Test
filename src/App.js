@@ -15,6 +15,8 @@ function App() {
 
   ]);
 
+  //State para carrito de compras
+  const [ carrito, agregarProducto ] = useState([]);
 
 
   const fecha = new Date().getFullYear();
@@ -28,8 +30,11 @@ function App() {
         <h1>Lista de productos</h1>
         {productos.map(producto => (
           <Producto
-          key={producto.id}
-          producto={producto}
+              key={producto.id}
+              producto={producto}
+              productos={productos}
+              carrito={carrito}
+              agregarProducto={agregarProducto}
           />
         ))}
 
