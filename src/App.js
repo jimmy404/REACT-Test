@@ -27,7 +27,10 @@ function App() {
 
         <h1>Lista de productos</h1>
         {productos.map(producto => (
-          <Producto />
+          <Producto
+          key={producto.id}
+          producto={producto}
+          />
         ))}
 
         <Footer
