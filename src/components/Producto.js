@@ -5,8 +5,8 @@ const Producto = ({producto}) => {
     const {nombre, precio, id} = producto;
 
     //Agrgar producto
-    const selecionarProducto = () => {
-        console.log('comprando...')
+    const selecionarProducto = id => {
+        console.log('comprando...', id)
     };
 
     return (
@@ -16,7 +16,7 @@ const Producto = ({producto}) => {
             <p>${precio}</p>
             <button
                 type="button"
-                onClick={() => selecionarProducto()}
+                onClick={() => selecionarProducto(id)}
                 >
                     Comprar
             </button>
