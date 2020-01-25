@@ -6,8 +6,12 @@ import Footer from './components/Footer';
 function App() {
   return (
       <Fragment>
-        <Header />
+        <Header
+          titulo='Tienda Virtual'
+        />
         <Footer />
+
+
       </Fragment>
   );
 }
