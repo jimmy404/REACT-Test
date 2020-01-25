@@ -39,7 +39,9 @@ function App() {
           />
         ))}
 
-          <Carrito />
+          <Carrito
+            carrito={carrito}
+          />
 
         <Footer
         fecha={fecha}
